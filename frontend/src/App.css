@@ -1,0 +1,137 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+.App {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #343a40;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #495057;
+  box-shadow: 0 0 0 3px rgba(73, 80, 87, 0.2);
+  outline: none;
+}
+
+button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color:green;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 600;
+  width:25%; /* Full width buttons */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: green;
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: #6c757d;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+button + button {
+  margin-top: 15px;
+}
+
+button.switch-mode {
+  background-color: #6c757d;
+}
+
+button.switch-mode:hover {
+  background-color: #5a6268;
+}
+
+button.switch-mode:active {
+  background-color: #4e555b;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #dee2e6;
+  width: 100%;
+}
+
+.asset-details {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.asset-details p {
+  margin: 5px 0;
+}
+
+.asset-details p strong {
+  color: #495057;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Centering buttons */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.switch-mode-container {
+  margin-top: 30px; /* Space from the form */
+}

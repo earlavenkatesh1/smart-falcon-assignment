@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fabric-network": "^2.2.20",
+    "nodemon": "^3.1.4"
+  }
+}
